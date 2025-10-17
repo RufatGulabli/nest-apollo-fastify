@@ -1,0 +1,45 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateUserInput {
+  age: Float
+  email: String!
+  name: String!
+  phone: String
+}
+
+type DefaultResponse {
+  message: String!
+}
+
+type DummyObject {
+  author: String!
+  id: Float!
+  likes: Float!
+  quote: String!
+}
+
+input GetByUUIDInput {
+  id: String!
+}
+
+type Mutation {
+  create(input: CreateUserInput!): UserObject!
+  likeQuote(id: Float!): DummyObject!
+}
+
+type Query {
+  getDummyObject: DummyObject!
+  getUser(input: GetByUUIDInput!): UserObject
+  getUsers: [UserObject!]!
+  health: DefaultResponse!
+}
+
+type UserObject {
+  age: Float
+  email: String!
+  id: String!
+  name: String!
+  phone: String
+}

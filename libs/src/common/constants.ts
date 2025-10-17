@@ -1,0 +1,19 @@
+export interface ENVIRONMENT_VARIABLES {
+  NODE_ENV: string;
+  APP_PORT: string;
+  GRAPHQL_DEBUG: boolean;
+  GRAPHQL_PLAYGROUND: boolean;
+  DUMMY_JSON_BASE_URL: string;
+}
+
+export const ENV = {
+  NODE_ENV: 'NODE_ENV',
+  APP_PORT: 'APP_PORT',
+  GRAPHQL_DEBUG: 'GRAPHQL_DEBUG',
+  GRAPHQL_PLAYGROUND: 'GRAPHQL_PLAYGROUND',
+  DUMMY_JSON_BASE_URL: 'DUMMY_JSON_BASE_URL',
+} as const;
+
+export const enum EXTERNAL_SERVICES {
+  DUMMY_JSON = 'DUMMY_JSON',
+}

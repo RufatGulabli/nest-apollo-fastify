@@ -18,6 +18,8 @@
 $ yarn install
 ```
 
+## Create .env file and copy the content of .env.sample file and fill the values
+
 ## Compile and run the project
 
 ```bash
@@ -26,19 +28,6 @@ $ yarn start:dev
 
 # production mode
 $ yarn run start:prod
-```
-
-## Run tests
-
-```bash
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
 ```
 
 ## Deployment
